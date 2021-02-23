@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="box" id="heading">
+		
+<h1><%=DAY%></h1>
+</div>
+
+<div class="box">
+	
+<% for(var i=0; i<ents.length; i++) { %>
+
+<div class="item">
+	<input type="checkbox" name="" >
+	<p> <%= ents[i] %> </p>
+
+</div>
+<% } %>
+
+<form  class="item" action="/" method="post">
+	<input  type="text"  name="entry" placeholder="New Item" autocomplete="off" required="">
+	<button type="submit" >+</button>
+
+</div>
+
+
+
+</form>
+</body>
+
+<footer>&copy; Copyright aviS 2021</footer>
+</html>
